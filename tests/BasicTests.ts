@@ -2,6 +2,7 @@ import {test,} from '@playwright/test';
 import {CommonPage} from "../pages/CommonPage";
 import {ArticlePage} from "../pages/ArticlePage";
 import {BasketPage} from "../pages/BasketPage";
+import {LoginPage} from "../pages/LoginPage";
 
 const articles = ['Silver Surfer By Slott & Allred Omnibus', 'Naarland'];
 
@@ -34,3 +35,8 @@ for (const article of articles) {
     await basketPage.removeArticleFromBasket();
   })
 }
+test("Login to Bol", async ({page}) => {
+    const loginPage = new LoginPage(page);
+    await loginPage.login(process.env.USER1, process.env.PASSWORD);
+})
+
