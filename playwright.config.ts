@@ -40,7 +40,7 @@ export default defineConfig({
     headless: false,
     screenshot: 'only-on-failure',
     launchOptions: {
-      slowMo: 500,
+      slowMo: 1000,
     }
   },
 

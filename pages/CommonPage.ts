@@ -8,11 +8,6 @@ export class CommonPage {
     readonly selectSearchFor: Locator;
     readonly searchButton: Locator;
     readonly searchResult: Locator;
-    readonly addToBasketBtn: Locator;
-    readonly addedToBasketMsg: Locator;
-    readonly continueToShoppingCartBtn: Locator;
-    readonly articleInBasket: Locator;
-
 
 
     constructor(page: Page) {
@@ -23,10 +18,7 @@ export class CommonPage {
         this.selectSearchFor = page.locator('[data-test="search_input_trigger"]');
         this.searchButton = page.locator('[data-test="search-button"]');
         this.searchResult = page.locator('[data-test="product-title"]');
-        this.addToBasketBtn = page.locator('[data-test="add-to-basket"]');
-        this.addedToBasketMsg = page.locator('[data-test="message"]');
-        this.continueToShoppingCartBtn = page.locator('[data-test="add-on-page-header"] [data-test="btn-go-to-shoppingcart"]');
-        this.articleInBasket = page.locator('.product-details__title').first();
+
     }
 
     async navigateToBol() {
@@ -40,12 +32,4 @@ export class CommonPage {
         await this.searchButton.click()
         await expect(this.searchResult).toHaveText(article);
     }
-
-    async addArticleToBasket(article: string) {
-        await this.addToBasketBtn.click();
-        await this.addedToBasketMsg.isVisible();
-        await this.continueToShoppingCartBtn.click();
-        await expect(this.articleInBasket).toHaveText(article);
-    }
-
 }
