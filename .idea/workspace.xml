@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c353fe8-5a5c-4337-b32f-d5b15b739155" name="Changes" comment="Refactor and split up into pages">
+    <list default="true" id="2c353fe8-5a5c-4337-b32f-d5b15b739155" name="Changes" comment="Adding test for autentication using .env file">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/LoginPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/LoginPage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/ArticlePage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ArticlePage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/playwright.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Basic flow.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BasicTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BasicTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BasicTests.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Sourceview/PlaywrightPOCTypescript",
+    "last_opened_file_path": "C:/Sourceview/Local-Licenser",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,7 +67,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699866426360</updated>
-      <workItem from="1699866427576" duration="19638000" />
+      <workItem from="1699866427576" duration="20152000" />
+      <workItem from="1699917164162" duration="58000" />
+      <workItem from="1699974570638" duration="624000" />
+      <workItem from="1700042688358" duration="1531000" />
+      <workItem from="1700052754138" duration="4527000" />
+      <workItem from="1700128970134" duration="644000" />
     </task>
     <task id="LOCAL-00001" summary="First commit basic flow">
       <created>1699907773784</created>
@@ -80,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699912474881</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding test for autentication using .env file">
+      <created>1699916267295</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699916267295</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +104,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit basic flow" />
     <MESSAGE value="Refactor and split up into pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor and split up into pages" />
+    <MESSAGE value="Adding test for autentication using .env file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding test for autentication using .env file" />
   </component>
 </project>
