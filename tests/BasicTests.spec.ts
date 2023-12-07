@@ -21,6 +21,7 @@ test.beforeEach(async ({ page }) => {
 for (const article of articles) {
   test('Search for article ' + article, async ({page}) => {
     await commonPage.searchForArticle(article);
+    await commonPage.expectSearchResultToBe(article);
   })
 }
 for (const article of articles) {

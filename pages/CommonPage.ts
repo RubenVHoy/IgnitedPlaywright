@@ -12,6 +12,8 @@ export class CommonPage extends AbstractPage{
     async searchForArticle(article: string) {
         await this.selectSearchFor.fill(article);
         await this.searchButton.click()
+    }
+    async expectSearchResultToBe(article: string) {
         await expect(this.searchResult).toHaveText(article);
     }
 }
