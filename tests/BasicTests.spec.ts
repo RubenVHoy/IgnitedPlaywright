@@ -5,6 +5,8 @@ import {BasketPage} from "../pages/BasketPage";
 import {LoginPage} from "../pages/LoginPage";
 
 const articles = ['Silver Surfer By Slott & Allred Omnibus', 'Naarland'];
+const user: string = process.env.USER1 ?? 'testuser';
+const password: string = process.env.PASSWORD ?? 'testpassword';
 let commonPage: CommonPage
 let articlePage: ArticlePage
 let basketPage: BasketPage
@@ -39,6 +41,6 @@ for (const article of articles) {
   })
 }
 test("Login to Bol", async ({page}) => {
-    await loginPage.login(process.env.USER1, process.env.PASSWORD);
+    await loginPage.login(user, password);
 })
 
