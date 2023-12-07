@@ -1,7 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test';
-import {AbstractPage} from "./AbstractPage";
+import {BasePage} from "./BasePage";
 
-export class CommonPage extends AbstractPage{
+export class CommonPage extends BasePage{
  
     async navigateToBol() {
         await this.page.goto('');

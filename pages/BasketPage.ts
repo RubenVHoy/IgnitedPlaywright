@@ -1,7 +1,7 @@
 import {Locator, Page } from '@playwright/test';
-import {AbstractPage} from "./AbstractPage";
+import {BasePage} from "./BasePage";
 
-export class BasketPage extends AbstractPage{
+export class BasketPage extends BasePage{
 
     async removeArticleFromBasket(){
         await this.removeArticleFromBasketBtn.click();

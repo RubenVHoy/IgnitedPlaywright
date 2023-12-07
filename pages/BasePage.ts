@@ -1,6 +1,6 @@
 import { expect, Locator, Page } from '@playwright/test';
 
-export class AbstractPage {
+export class BasePage {
     //CommonPage
     readonly page: Page;
     readonly privacyRejectBtn: Locator;

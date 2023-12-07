@@ -1,7 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test';
-import {AbstractPage} from "./AbstractPage";
+import {BasePage} from "./BasePage";
 
-export class ArticlePage extends AbstractPage{
+export class ArticlePage extends BasePage{
     
     async addArticleToBasket(article: string) {
         await this.addToBasketBtn.click();
